@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/world.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="map-container">
+        <div class="zoom-control">
+            <button href="" class="btn" id="zoom-in">
+                <span>+</span>
+            </button>
+
+            <button href="" class="btn" id="zoom-out">
+               <span>-</span>
+            </button>
+        </div>
+
+        <div class="drawing-control">
+            <button class="btn" id="draw-button">
+                <span class="draw-line">
+                    <!-- <img src="/images/spritesheet.png" alt=""> -->
+                </span>
+            </button>
+            <button class="btn" id="draw-button">
+                <!-- <span class="edit-line"> -->
+                    <i class="fa fa-edit"></i>
+                <!-- </span> -->
+            </button>
+        </div>
+
+        <defs>
+            <filter id="f1" x="0" y="0">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+            </filter>
+          </defs>
+
+        <div class="rotation-control">
+            <button class="btn">
+                <i class="fa fa-caret-square-up"></i>
+            </button>
+            <button class="btn" >
+                <i class="fa fa-caret-square-left"></i>
+            </button>
+
+            <button class="btn">
+                <i class="fa fa-caret-square-bottom"></i>
+            </button>
+
+            <button class="btn">
+                <i class="fa fa-caret-square-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="description">
+
+    </div>
+    <script src="d3/d3.js"></script>
+    <script src="d3/d3-geo-projection.v2.min.js"></script>
+    <script src="js/world.js"></script>
+</body>
+</html>
