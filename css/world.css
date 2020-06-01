@@ -67,7 +67,7 @@ body{
 }
 
 .draw-line  {
-    background-image: url(images/spritesheet.png);
+    background-image: url('../images/spritesheet.png');
     background-position: 3% 50%;
     padding: 12px;
     /* height: 22px; */
@@ -75,7 +75,7 @@ body{
 }
 
 .edit-line  {
-    background-image: url(images/spritesheet.png);
+    background-image: url('../images/spritesheet.png');
     background-position: 54.9% 50%;
     padding: 12px;
     background-size: cover;
