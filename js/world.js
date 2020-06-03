@@ -24,7 +24,9 @@ var drawing_data = {
 // Define data projection
 // d3.geoConicEqualArea
 // geoAlbers()
-var projection = d3.geoAzimuthalEquidistant().scale(500)
+// d3.geoAzimuthalEquidistant().scale(500)
+// d3.geoSinusoidal()
+var projection = d3.geoAzimuthalEquidistant().scale(300)
                     .center([0,0])
                     .rotate([100,-90])
                     .translate([width/2,height/2]);;
@@ -52,6 +54,8 @@ fetch(dataUrl)
         console.log(data);
         createMap(data);
         addGraticules();
+
+        
     })
 
 
@@ -256,6 +260,7 @@ function transformSvg(state) {
     .attr("transform",state)
     .style("stroke-width",0.2);
 }
+
 // Search Control
     // On search found zoom to the point
 // 
